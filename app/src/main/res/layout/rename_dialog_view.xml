@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rename"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/extra_large_text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title"
+        android:id="@+id/new_name"
+        android:hint="Rename"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/done"
+        android:layout_margin="6dp"
+        android:id="@+id/done"
+        android:layout_below="@+id/new_name"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

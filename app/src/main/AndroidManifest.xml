@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.singh.multimeet.quicxplo">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.singh.multimeet.quicxplo.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.singh.multimeet.quicxplo.ui.browse.home.Home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.singh.multimeet.quicxplo.ui.browse.Browse"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.singh.multimeet.quicxplo.ui.browse.home.Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.singh.multimeet.quicxplo.ui.browse.search.SearchActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.singh.multimeet.quicxplo.ui.browse.Browse"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".ui.browse.search.SearchActivity" />
+
+        <activity
+            android:name="com.singh.multimeet.quicxplo.ui.browse.quickAccess.QuickAccess"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.singh.multimeet.quicxplo.receiver.BootUpReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.singh.multimeet.quicxplo.ui.browse.intro.Intro">
+
+        </activity>
+        <activity android:name="com.singh.multimeet.quicxplo.ui.browse.splash.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

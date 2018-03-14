@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <group>
+        <path
+            android:fillColor="#007dd6"
+            android:pathData="M 9 49.5 C 9 27.147 27.147 9 49.5 9 C 71.853 9 90 27.147 90 49.5 C 90 71.853
+71.853 90 49.5 90 C 27.147 90 9 71.853 9 49.5 Z" />
+        <path
+            android:fillColor="#C3E1ED"
+            android:strokeWidth="1"
+            android:strokeMiterLimit="10"
+            android:pathData="M 23.54 28 L 76.46 28 C 77.31 28 78 28.69 78 29.54 L 78 70.46 C 78 71.31 77.31
+72 76.46 72 L 23.54 72 C 22.69 72 22 71.31 22 70.46 L 22 29.54 C 22 28.69 22.69
+28 23.54 28 Z" />
+        <path
+            android:strokeColor="#E7ECED"
+            android:strokeWidth="2"
+            android:strokeMiterLimit="10"
+            android:pathData="M 23.54 28 L 76.46 28 C 77.31 28 78 28.69 78 29.54 L 78 70.46 C 78 71.31 77.31
+72 76.46 72 L 23.54 72 C 22.69 72 22 71.31 22 70.46 L 22 29.54 C 22 28.69 22.69
+28 23.54 28 Z" />
+        <path
+            android:fillColor="#ed8a19"
+            android:pathData="M 30.431 38.569 C 30.431 34.943 33.374 32 37 32 C 40.626 32 43.569 34.943 43.569
+38.569 C 43.569 42.195 40.626 45.138 37 45.138 C 33.374 45.138 30.431 42.195
+30.431 38.569 Z" />
+        <path
+            android:fillColor="#1a9172"
+            android:pathData="M 77 57.111 L 76 56 L 64 45 L 53.5 56.5 L 58.983 61.983 L 63 66 L 77 66 L 77
+57.111 Z" />
+        <path
+            android:fillColor="#1a9172"
+            android:pathData="M 23 70 L 47 70 L 42.983 65.983 L 32.017 55.017 L 23 62.956 L 23 70 Z" />
+        <path
+            android:fillColor="#6b5b4b"
+            android:pathData="M 23 66 H 77 V 71 H 23 V 66 Z" />
+        <path
+            android:fillColor="#25ae88"
+            android:pathData="M 58.983 61.983 L 48.017 51.017 L 31 66 L 63 66 L 58.983 61.983 Z" />
+    </group>
+</vector>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.multimeet.quicxplo.com.singh.multimeet.quicxplo.ui.browse.Browse">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:id="@+id/barLayout"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <include
+        android:id="@+id/crumbs"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bread_crumbs"
+        />
+
+</android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_below="@+id/barLayout"
+        android:id="@+id/contentList"
+        android:layout_width="match_parent"
+        android:layoutAnimation="@anim/layout_fall_down"
+        android:layout_height="match_parent"
+        app:fastScrollEnabled="true"
+        app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+        app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+
+         />
+
+    <ScrollView
+        android:layout_centerVertical="true"
+        android:id="@+id/scroll"
+        android:visibility="gone"
+        android:layout_above="@+id/options"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/create"
+                android:visibility="visible"
+                android:layout_toRightOf="@+id/create_t"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/create_new_folder"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Create Folder"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:visibility="visible"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/create_t"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/copy"
+                android:layout_toRightOf="@+id/create_t"
+                android:visibility="visible"
+                android:layout_below="@+id/create"
+                app:srcCompat="@drawable/copy"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Move"
+                android:visibility="visible"
+                android:textColor="#fff"
+                android:layout_below="@+id/copy"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/move_t"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/move"
+                android:layout_toRightOf="@+id/create_t"
+                android:layout_below="@+id/copy"
+                android:layout_margin="5dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/cut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Copy"
+                android:textColor="#fff"
+                android:layout_below="@+id/create"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:padding="3dp"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/copy_t"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/rename"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/create_t"
+                android:layout_below="@+id/move"
+                android:visibility="visible"
+                app:srcCompat="@drawable/rename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Rename"
+                android:visibility="visible"
+                android:textColor="#fff"
+                android:layout_below="@+id/move"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/rename_t"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/details"
+                android:visibility="visible"
+                android:layout_toRightOf="@+id/create_t"
+                android:layout_below="@+id/rename"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Details"
+                android:visibility="visible"
+                android:textColor="#fff"
+                android:layout_below="@+id/rename"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/details_t"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/delete"
+                android:visibility="visible"
+                android:layout_below="@+id/details"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@+id/create_t"
+                app:srcCompat="@drawable/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Delete"
+                android:textColor="#fff"
+                android:layout_below="@+id/details"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:visibility="visible"
+                android:background="@drawable/tooltip_back"
+                android:id="@+id/delete_t"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/paste"
+                app:srcCompat="@drawable/paste"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/share_t"
+                android:text="Share"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:visibility="visible"
+                android:background="@drawable/tooltip_back"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delete"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/share"
+                android:visibility="visible"
+
+                android:layout_toRightOf="@+id/create_t"
+                android:layout_below="@+id/delete"
+                app:srcCompat="@drawable/share"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/options"
+    android:layout_alignParentRight="true"
+    app:srcCompat="@drawable/options"
+    android:layout_height="wrap_content" />
+</RelativeLayout>

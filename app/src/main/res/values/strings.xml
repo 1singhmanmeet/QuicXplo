@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QuicXplo</string>
+    <string name="title_activity_home">Home</string>
+    <string name="default_total_text">Total space: %s</string>
+    <string name="default_free_text">Free space: %s</string>
+    <string name="default_used_text">Used space: %s</string>
+    <string name="internal">Internal Storage</string>
+    <string name="rename">Rename</string>
+    <string name="empty_text">Folder is Empty</string>
+    <string name="dir_reference">dir</string>
+    <string name="external">External Storage</string>
+    <string name="no_app_available">No application to open file</string>
+    <string name="open_using">Open file using</string>
+    <string name="action_settings">Settings</string>
+    <string name="path">Path: %s</string>
+    <string name="type">Type: %s</string>
+    <string name="selectedColor">#73007DD6</string>
+    <string name="lastModified">Last Modified: %s</string>
+    <string name="size">Size: %s</string>
+    <string name="ROOT_UNIT_ID">ca-app-pub-9697270530960431~7885924577</string>
+    <string name="UNIT_ID">ca-app-pub-9697270530960431/1802660126</string>
+    <string name="frag_1_description">Manage your files easily</string>
+    <string name="frag_2_description">Quick glance at recently added files</string>
+    <string name="frag_3_description">Tap here to finish</string>
+    <string name="multimeet">multimeet inc.</string>
+</resources>

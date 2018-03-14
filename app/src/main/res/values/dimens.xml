@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="small_text">12sp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="extra_large_text">25sp</dimen>
+    <dimen name="large_text">18sp</dimen>
+    <dimen name="media_view_height">60dp</dimen>
+    <dimen name="media_view_width">60dp</dimen>
+</resources>
